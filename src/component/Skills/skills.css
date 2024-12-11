@@ -1,0 +1,45 @@
+#skills {
+    text-align: center;
+    height: fit-content;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .skillTitle {
+    font-size: 2rem; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .skillBars {
+    display: flex;
+    flex-direction:row;
+    gap:50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    width:100%;
+    background-color: rgba(30,30,30);
+    border-radius: 20px;
+    margin-top:0px;
+  }
+  
+  .skillBar {
+    margin: 1rem; 
+    display: flex;
+    flex-direction: column; /* Make skillBar a column */
+    align-items: center; /* Center image and text vertically */
+    width: 15%;
+  }
+  
+  .skillBarImg {
+    width: 100px; 
+    height: 100px;
+    margin-bottom: 0.5rem; /* Add some space below the image */
+  }
+  
+  .skillBarText h2 {
+    font-size: 1rem; 
+  }

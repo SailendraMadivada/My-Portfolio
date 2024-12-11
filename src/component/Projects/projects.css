@@ -1,0 +1,96 @@
+#projects {
+  height: auto; /* Let the section height adjust based on content */
+  padding: 20px; /* Padding for inner spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  margin-top: 50px;
+}
+
+.worksTitle {
+  font-size: 1.8rem; /* Smaller title size */
+  text-align: center;
+  margin-bottom: 20px; /* Reduced space between title and images */
+}
+
+.worksImgs {
+  text-align: center;
+  display:flex;
+  justify-content: center;/* Align image to the right on larger screens */
+  align-items: center; /*Ensure vertical centering of content*/
+  gap: 1rem;
+  width:100%; /* Ensure the flex container spans the full width */
+  flex-wrap: wrap; /* Allow content to wrap if necessary */
+}
+
+.worksImgs a {
+
+ width: 40%;
+}
+
+.worksImg {
+  max-width: 100%; /* Adjust image size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.worksImg:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.workBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.workBtn:hover {
+  background-color: #0056b3;
+  color: white; /* Change text color when hovering */
+}
+
+/* For tablets and smaller devices, make sure the image stays centered */
+@media (max-width: 768px) {
+  .worksImgs {
+    justify-content: center; /* Center the image on smaller screens */
+  }
+
+  .worksImg {
+    max-width: 80%; /* Adjust image size on smaller screens */
+  }
+
+  .workBtn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+/* For very small screens, ensure that the image remains centered */
+@media (max-width: 480px) {
+  .worksImgs {
+    justify-content: center; /* Center the image */
+  }
+
+  .worksTitle {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .workBtn {
+    font-size: 0.9rem; /* Smaller button text size for small screens */
+  }
+
+  .worksImg {
+    max-width: 90%; /* Further adjust image size on very small screens */
+  }
+}
