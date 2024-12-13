@@ -86,3 +86,9 @@
       font-size: 1.2rem; /* Smaller heading for mobile */
   }
 }
+
+@media screen and (max-width:540px) {
+   #skills{
+    margin-top: 20px;
+   }
+}
