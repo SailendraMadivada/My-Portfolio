@@ -11,72 +11,32 @@ import Bootstrap from "../../assets/bootstrap.png";
 import Python from "../../assets/python.png";
 import Photo from "../../assets/photo.png";
 
-
 const Skills = () => {
+  const skillsData = [
+    { img: Java, alt: "Java", name: "Java" },
+    { img: Python, alt: "Python", name: "Python" },
+    { img: Database, alt: "Database", name: "Oracle" },
+    { img: Springboot, alt: "Springboot", name: "SpringBoot" },
+    { img: Html, alt: "HTML", name: "HTML" },
+    { img: Css, alt: "CSS", name: "CSS" },
+    { img: Bootstrap, alt: "Bootstrap", name: "Bootstrap" },
+    { img: Javascript, alt: "JavaScript", name: "JavaScript" },
+    { img: Reactjs, alt: "ReactJS", name: "ReactJs" },
+    { img: Photo, alt: "Editing", name: "Photo/Video Editing" }
+  ];
+
   return (
-    <section id='skills'>
+    <section id="skills">
       <span className="skillTitle">My Skills</span>
       <div className="skillBars">
-        <div className="skillBar">
-          <img src={Java} alt="Java" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>Java</h2> 
+        {skillsData.map((skill, index) => (
+          <div className="skillBar" key={index}>
+            <img src={skill.img} alt={skill.alt} className="skillBarImg" />
+            <div className="skillBarText">
+              <h2>{skill.name}</h2>
+            </div>
           </div>
-        </div>
-        <div className="skillBar">
-          <img src={Python} alt="Java" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>Python</h2> 
-          </div>
-        </div>
-        <div className="skillBar">
-          <img src={Database} alt="Database" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>Oracle</h2> 
-          </div>
-        </div>
-        <div className="skillBar">
-          <img src={Springboot} alt="Springboot" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>SpringBoot</h2> 
-          </div>
-        </div>
-        <div className="skillBar">
-          <img src={Html} alt="Html" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>HTML</h2> 
-          </div>
-        </div>
-        <div className="skillBar">
-          <img src={Css} alt="Css" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>CSS</h2> 
-          </div>
-        </div>
-        <div className="skillBar">
-          <img src={Bootstrap} alt="Java" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>Bootstrap</h2> 
-          </div>
-        </div>
-        <div className="skillBar">
-          <img src={Javascript} alt="Javascript" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>JavaScript</h2> 
-          </div>
-        </div>
-        <div className="skillBar">
-          <img src={Reactjs} alt="Reactjs" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>ReactJs</h2> 
-          </div>
-        </div>
-        <div className="skillBar">
-          <img src={Photo} alt="Java" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>Photo/Video Editing</h2> 
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

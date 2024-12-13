@@ -79,3 +79,7 @@
 .link:hover {
     transform: scale(1.1); /* Slight zoom effect when hovering over the link icons */
 }
+
+input::placeholder{
+  opacity: 1;
+}

@@ -1,45 +1,88 @@
 #skills {
-    text-align: center;
-    height: fit-content;
-    margin-right: 200px;
-    margin-left: 200px;
-    margin-bottom: 10px;
-  }
-  
-  .skillTitle {
-    font-size: 2rem; /* Adjust font size as needed */
-    font-weight: bold;
-    margin-bottom: 2rem;
-  }
-  
-  .skillBars {
-    display: flex;
-    flex-direction:row;
-    gap:50px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-    width:100%;
-    background-color: rgba(30,30,30);
-    border-radius: 20px;
-    margin-top:0px;
-  }
-  
+  text-align: center;
+  height: fit-content;
+  margin: 10px auto; /* Reduce the margin for compact spacing */
+  padding: 5px; 
+  margin-top: 100px;/* Reduced padding for a tighter layout */
+}
+
+.skillTitle {
+  font-size: 1.8rem; /* Slightly smaller font size */
+  font-weight: bold;
+  margin-bottom: 1.5rem; /* Reduced margin below the title */
+}
+
+.skillBars {
+  display: flex;
+  flex-direction: row;
+  gap: 90px; /* Reduced gap between skill bars */
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(30, 30, 30, 0.9);
+  border-radius: 15px; /* Reduced border-radius for a tighter look */
+  padding: 15px; 
+  ;/* Reduced padding for compactness */
+}
+
+.skillBar {
+  margin: 0.5rem; /* Reduced margin between bars */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%; /* Slightly smaller width for each bar */
+  transition: transform 0.3s ease;
+}
+
+.skillBar:hover {
+  transform: scale(1.1);
+}
+
+.skillBarImg {
+  width: 80px; /* Reduced image size */
+  height: 80px;
+  margin-bottom: 0.3rem; /* Smaller spacing below the image */
+}
+
+.skillBarText h2 {
+  font-size: 0.9rem; /* Smaller font size for text */
+  text-align: center;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
   .skillBar {
-    margin: 1rem; 
-    display: flex;
-    flex-direction: column; /* Make skillBar a column */
-    align-items: center; /* Center image and text vertically */
-    width: 15%;
+      width: 18%;
   }
-  
+}
+
+@media (max-width: 992px) {
+  .skillBar {
+      width: 22%; /* Slightly larger for tablets */
+  }
+  .skillBars {
+      gap: 20px; /* Reduced gap for narrower screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .skillBar {
+      width: 35%; /* Fit 2-3 bars per row */
+  }
+  .skillTitle {
+      font-size: 1.5rem; /* Adjusted heading size */
+  }
+}
+
+@media (max-width: 576px) {
+ 
   .skillBarImg {
-    width: 100px; 
-    height: 100px;
-    margin-bottom: 0.5rem; /* Add some space below the image */
+      width: 70px; /* Further reduced image size */
+      height: 70px;
   }
-  
-  .skillBarText h2 {
-    font-size: 1rem; 
+  .skillTitle {
+      font-size: 1.2rem; /* Smaller heading for mobile */
   }
+}

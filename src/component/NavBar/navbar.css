@@ -10,7 +10,7 @@
     justify-content: space-between;
     position: sticky;
     top:0;
-    z-index: 3;
+    z-index: 100;
 }
 .logo
 {
@@ -74,7 +74,7 @@
     margin: 0.25rem;
     background: rgb(30,30,30);
 }
-@media  screen and(max-width:720px){
+@media  (min-width:10px) and (max-width:450px){
     .mobMenu{
         display: flex;
     }
