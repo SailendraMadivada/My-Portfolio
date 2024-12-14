@@ -57,7 +57,7 @@ import emailjs from '@emailjs/browser';
                     <div className="links">
                         <a href="https:www.linkedin.com/in/sailendra-madivada-5452a7288" target="_blank"> <img src={LinkedIn} alt="Facebook"className="link"/></a>
                         <a href="https://github.com/SailendraMadivada" target="_blank"> <img src={Github} alt="twitter"className="link"/></a>
-                        <a href="https://wa.me/9640849798" target="_blank">  <img src={Whatsapp} alt="Youtube"className="link"/></a>
+                        <a href="https://wa.me/+919640849798" target="_blank">  <img src={Whatsapp} alt="Youtube"className="link"/></a>
                        <a href="https://www.instagram.com/sailendra__madivada" target="_blank"><img src={InstagramIcon} alt="Instragram"className="link"/> </a>
                     </div>
                 </form>
