@@ -14,7 +14,7 @@ const Projects = () => {
           <a className="anc" href="https://github.com/SailendraMadivada/Employee-Management-System" target="_blank" rel="noopener noreferrer">
             <img src={Employee} alt="Employee Management Project" className="worksImg" />
           </a>
-          <p className="projectName">Employee Management</p>
+          <p className="projectName">Employee Management System</p>
         </div>
         {/* Weather App */}
         <div className="projectContainer">
